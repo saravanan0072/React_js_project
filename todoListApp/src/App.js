@@ -56,7 +56,15 @@ function App() {
     addItem(newItem)
 
     setNewItem("")
-   }
+  }
+  
+  //search content clear
+
+  const handleSearchClear = (e) => {
+    e.preventDefault()
+    setSearch("")
+    
+  }
     
    return (
      <div className="App">
@@ -69,7 +77,8 @@ function App() {
        />
 
        <SearchItem search={search}
-        setSearch={setSearch} />
+         setSearch={setSearch}
+         handleSearchClear={ handleSearchClear} />
 
        <Content
          items={items.filter((item) => item.item.toLowerCase().includes(search.toLowerCase()))}
