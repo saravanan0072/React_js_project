@@ -1,0 +1,156 @@
+/* reset page---------------------------------------------- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styles-------------------------------------------- */
+html{
+  font-size: 22px;
+  height: 100%;
+}
+
+body{
+
+   min-height: 120vh;
+   height: 100%;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*App styling ------------------------------------------------- */
+
+.App{
+  border: 2px solid black;
+  min-height: 100vh;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* square component  styling -------------------------------------------- */
+
+.square{
+  /* border: 2px solid black; */
+  width: 40%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 4px 5px 4px gray;
+  flex-direction: column;
+}
+
+/* input form component styling -------------------------------------------- */
+
+.inputForm{
+  /* border: 2px solid black; */
+  margin: 1.5rem 0.25rem 0;
+  width: 40%;
+  height: 15%;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.inputForm input[type="text"]{
+  width: 100%;
+  height: 40%;
+  padding: 0.5rem;
+  border: 2px solid black;
+  border-radius: 0.25rem;
+  box-shadow: -2px -1px 1px 1px gray;
+  font-size: 1rem;
+  display: grid;
+  place-content: center;
+  
+  
+}
+
+.inputForm input[type="text"]::placeholder{
+  text-align: center;
+}
+
+.form-btn{
+  width: 100%;
+  height: 45%;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: grey;
+}
+
+.clear-btn-form{
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  font-size: 1rem;
+  color: grey;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  width: 10%;
+  height: 20%;
+  display: grid;
+  justify-items: center;
+  place-content: center;
+  background-color: transparent;
+  border: none;
+  color: black;
+}
+
+.clear-btn-form:hover{
+  color:red;
+  cursor: pointer;
+}
+
+/* media query ------------------------------- */
+
+@media screen and (min-width: 400px) and (max-width: 600px){
+ .inputForm input[type="text"]::placeholder{
+  text-align: left;
+  font-size: calc(0.9rem - 9px + 3px);
+  
+  
+}
+.inputForm input[type="text"]{
+  padding: 0.1rem;
+}
+
+.clear-btn-form{
+  font-size: 13px;
+  top: 15px;
+}
+.form-btn{
+  font-size: 12px;
+}
+}
+
+@media screen and (max-width:400px){
+  .inputForm input[type="text"]::placeholder{
+  text-align: left;
+  font-size: calc(0.8rem - 9px + 3px);
+  
+  
+}
+.inputForm input[type="text"]{
+  padding: 0.1rem;
+}
+
+.clear-btn-form{
+  font-size: 13px;
+  top: 15px;
+}
+.form-btn{
+  font-size: 12px;
+}
+}
