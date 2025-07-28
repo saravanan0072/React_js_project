@@ -179,7 +179,7 @@ button:focus,button:hover{
 /* search form css */
 
 .searchForm{
-  /* border: 2px solid black; */
+  border: 2px solid black;
   width: 98%;
   border-radius: 0.25rem;
   margin:  0 0.25rem 0.25rem;
@@ -195,7 +195,7 @@ button:focus,button:hover{
 }
 
 .searchForm input[type="text"]{
-  width: 100%;
+  width: 86%;
   height: 100%;
   border: 2px solid black;
   padding: 0.5rem;
@@ -203,4 +203,19 @@ button:focus,button:hover{
   font-size: 1rem;
   border-bottom: 2px solid grey;
   outline: none;
+  margin-right: 0.4rem;
+  
+}
+
+.search-btn{
+  color: black;
+  width: 48px;
+  height: 46px;
+  padding: 0.25rem;
+  
+}
+
+.search-btn:hover{
+  color: red;
+  font-size: 1rem;
 }
