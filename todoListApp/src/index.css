@@ -228,7 +228,7 @@ button:focus,button:hover{
   font-size: 1rem;
 }
 
-.loading svg{
+.spinner svg{
   color: green;
   font-size: 3.5rem;
   /* border: 2px solid black; */
