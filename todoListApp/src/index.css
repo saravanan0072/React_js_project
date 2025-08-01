@@ -3,33 +3,37 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 html{
+  min-height: 100%;
   font-size: 22px;
-  height: 100%;
+  /* border: 6px solid black; */
+  display: grid;
 }
 
+
 body{
-  min-height: 100vh;
-  height: 100%;
+  /* min-height: 150vh; */
+  
   font-family: 'Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+  /* border: 6px solid black; */
+  min-height: 100%;
+  font-size: 22px;
+  display: grid;
+  padding: 30px;
 }
 
 .App{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  height: 100%;
-  border: 3px solid mediumblue;
+  border: 2px solid mediumblue;
   width: 100%;
   max-width: 500px;
   margin: auto;
-  margin-top: 85px;
-  
+  height: 100%;
   
   
 }
@@ -42,16 +46,19 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  /* border: 2px solid red; */
 }
 
 main{
   width: 100%;
   display: flex;
-  flex: 1;
   justify-content: center;
   align-items:center;
   flex-direction: column;
+  height: 100%;
+  /* border: 5px solid orange; */
+  flex:1;
+  
 }
 
 footer{
@@ -59,9 +66,10 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: mediumblue;
+  background-color:mediumblue;
   color: aliceblue;
   padding: 1rem;
+  /* border: 2px solid red; */
 }
  
 ul{
@@ -88,7 +96,7 @@ ul li::before{
   justify-content: flex-start;
   align-items: center;
   padding: 0.5rem 0.5rem;
-  /* border: 2px solid black; */
+  border: 2px solid black;
   margin: 0.25rem 0;
   background-color: #eee;
 }
@@ -179,7 +187,7 @@ button:focus,button:hover{
 /* search form css */
 
 .searchForm{
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 98%;
   border-radius: 0.25rem;
   margin:  0 0.25rem 0.25rem;
@@ -218,4 +226,19 @@ button:focus,button:hover{
 .search-btn:hover{
   color: red;
   font-size: 1rem;
+}
+
+.loading svg{
+  color: green;
+  font-size: 3.5rem;
+  /* border: 2px solid black; */
+ 
+  animation: spin 2s linear infinite forwards;
+}
+  
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
