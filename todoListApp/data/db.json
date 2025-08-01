@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": "454c",
+      "checked": true,
+      "item": "mango"
+    },
+    {
+      "id": "f654",
+      "checked": false,
+      "item": "apple"
+    },
+    {
+      "id": "bf7e",
+      "checked": true,
+      "item": "smart"
+    }
+  ]
+}
