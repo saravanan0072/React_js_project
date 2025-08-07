@@ -23,7 +23,7 @@ function App() {
   const[isLoading, setIsLoading]= useState(true)
 
 
-  const API_URL = 'http://localhost:3500/items';
+  const API_URL = "https://react-js-project-1.onrender.com/items";
   
   
  
