@@ -1,0 +1,12 @@
+{
+  "name": "json-server-api",
+  "version": "1.0.0",
+  "description": "JSON Server for todoListApp",
+  "main": "server.js",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3500"
+  },
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
