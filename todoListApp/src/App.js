@@ -67,7 +67,7 @@ function App() {
       const id = items.length ?  items[items.length-1].id+1  : 1
       const addNewItem = {  checked: false, item }
       const listItems = [...items, addNewItem]
-      // setItems(listItems)
+      setItems(listItems)
     //  localStorage.setItem("todo_list", JSON.stringify(listItems))
 
     const postOptions = {
