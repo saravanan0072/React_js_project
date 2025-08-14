@@ -154,7 +154,7 @@ function App() {
     
    return (
      <div className="App">
-       <Header title="list app" />
+       <Header title="TaskHub" />
 
        <AddItem
          newItem={newItem}
