@@ -22,6 +22,7 @@ body{
   font-size: 22px;
   display: grid;
   padding: 30px;
+ 
 }
 
 .App{
@@ -29,23 +30,24 @@ body{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border: 2px solid mediumblue;
+  /* border: 2px solid mediumblue; */
   width: 100%;
   max-width: 500px;
   margin: auto;
   height: 100%;
-  
+   background-color: #333;
   
 }
 
 header{
   width: 100%;
   padding: 0 0.25em;
-  background-color: mediumblue;
-  color: aliceblue;
+  background:linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 22px;
   /* border: 2px solid red; */
 }
 
@@ -66,7 +68,7 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:mediumblue;
+  background:linear-gradient(135deg, #6a11cb, #2575fc);
   color: aliceblue;
   padding: 1rem;
   /* border: 2px solid red; */
@@ -75,13 +77,14 @@ footer{
 ul{
   /* border: 2px solid black; */
   width:100%;
-  padding: 0 0.25rem;
+  padding: 10px;
 }
 
 ul li{
   list-style: none;
   margin: 0.25rem;
-  padding:0 0.25rem 0.25rem;
+  padding:0.25rem 0.25rem;
+  
   
 
   
@@ -96,9 +99,13 @@ ul li::before{
   justify-content: flex-start;
   align-items: center;
   padding: 0.5rem 0.5rem;
-  border: 2px solid black;
   margin: 0.25rem 0;
-  background-color: #eee;
+  background-color:#f4f4f4;
+  border-radius: 25px;
+  margin-top: 25px;
+  border: none;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .item:first-child{
@@ -162,26 +169,31 @@ ul li::before{
   min-height: 48px;
   font-size: 1rem;
   padding: 0.25rem;
-  border-radius: 0.25rem;
+  border-radius: 1rem;
   outline: none;
   margin-right: 0.25rem;
+  border: none;
+
 }
 
 button{
   height: 48px;
   min-width: 48px;
-  border-radius: 0.25rem;
+  border-radius: 10px;
   padding: 0.5rem;
   font-size: 1rem;
-  background-color: aliceblue;
-  color: red;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
   cursor: pointer;
-
-
+  outline: none;
+  border:none;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 button:focus,button:hover{
-  color: green;
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: scale(1.05);
 }
 
 /* search form css */
@@ -193,8 +205,10 @@ button:focus,button:hover{
   margin:  0 0.25rem 0.25rem;
   padding: 0.25rem;
   height: 65px;
-  
+  outline: none;
+
 }
+
 
 .searchForm label{
    position: absolute;
@@ -203,23 +217,24 @@ button:focus,button:hover{
 }
 
 .searchForm input[type="text"]{
-  width: 86%;
+  width: 100%;
   height: 100%;
-  border: 2px solid black;
   padding: 0.5rem;
   border-radius: 0.5rem;
   font-size: 1rem;
-  border-bottom: 2px solid grey;
   outline: none;
   margin-right: 0.4rem;
+  border: none;
   
 }
 
-.search-btn{
+.search-icon{
   color: black;
-  width: 48px;
-  height: 46px;
-  padding: 0.25rem;
+  position: relative;
+  left: 89%;
+  top:-40px;
+  font-size: calc(0.8rem + 1vw);
+  
   
 }
 
