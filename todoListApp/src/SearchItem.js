@@ -1,12 +1,16 @@
 import React from "react"
 import { MdClear } from "react-icons/md";
-const SearchItem = ({search,setSearch,handleSearchClear}) => {
+import { useRef } from "react";
+
+const SearchItem = ({ search, setSearch, handleSearchClear }) => {
+  const valueRef= useRef(null)
   return (
     <form className="searchForm" onSubmit={(e) => handleSearchClear(e)}>
       <label htmlFor="search">Search</label>
       <input
         type="text"
         id="search"
+        ref={valueRef}
         role="searchbox"
         placeholder="Search Items"
         autoComplete="off"
@@ -14,9 +18,10 @@ const SearchItem = ({search,setSearch,handleSearchClear}) => {
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
-      <button className="search-btn" role="clear_button"  aria-label="clear the search content">
-          <MdClear />
-      </button>
+      
+        <MdClear
+          className="search-icon" onClick={() => valueRef.current.focus()}/>
+      
     </form>
   );
 }
