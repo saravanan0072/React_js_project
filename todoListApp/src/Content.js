@@ -10,7 +10,7 @@ import ItemsList from "./ItemsList";
 //------------------------------------[list and Keys ]--------------------------------------||
 const Content = ({ items, handleKey, handleDelete }) => {
   return (
-    <main>
+    <>
       {items.length ? (
         <ItemsList
           items={items}
@@ -22,7 +22,7 @@ const Content = ({ items, handleKey, handleDelete }) => {
           your todo list is empty!
         </p>
       )}
-    </main>
+    </>
   );
 };
 
